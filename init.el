@@ -20,6 +20,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(org-agenda-files (quote ("n:/org/homework.org")))
  '(package-selected-packages (quote (magit projectile))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -27,3 +28,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(global-set-key "\C-cl" 'org-store-link)
+(global-set-key "\C-ca" 'org-agenda)
+(global-set-key "\C-cc" 'org-capture)
+(global-set-key "\C-cb" 'org-iswitchb)
